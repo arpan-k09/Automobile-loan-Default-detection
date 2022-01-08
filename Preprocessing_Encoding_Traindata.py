@@ -5,6 +5,7 @@ from imblearn.over_sampling import RandomOverSampler
 
 df = pd.read_csv('Train_Dataset.csv')
 print(df.shape)
+print(df.Default.value_counts())
 # df.isna().sum()
 x = list(df)
 # print(x)
@@ -65,10 +66,6 @@ for i in obj_float:
     mean_Val = df[i].median()
     df[i].fillna(value=mean_Val,inplace=True)
 
-df.to_csv('Clean_Test.csv')
-
-
-
 # Solve the data imbalance issue by oversampling ===============================
 print('Percentage of the minority class: - ',df.Default.sum()/df.shape[0])
 
@@ -81,5 +78,5 @@ print(y_res.value_counts())
 
 X_res['Default'] = y_res
 print(X_res.columns)
-
+print(X_res.shape)
 df.to_csv('Clean_Train.csv')
