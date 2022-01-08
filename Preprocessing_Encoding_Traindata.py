@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 from imblearn.over_sampling import RandomOverSampler
+from imblearn.over_sampling import SMOTE
 
 df = pd.read_csv('Train_Dataset.csv')
 print(df.shape)
@@ -77,6 +78,15 @@ print('Percentage of the minority class: - ',y_res.sum()/y_res.shape[0])
 print(y_res.value_counts())
 
 X_res['Default'] = y_res
-print(X_res.columns)
 print(X_res.shape)
-df.to_csv('Clean_Train.csv')
+X_res.to_csv('Clean_Train_Oversampling.csv')
+
+# SMOTE ================================================================================================================
+
+smo = SMOTE(sampling_strategy=0.65,random_state=42)
+X_smo, y_smo = smo.fit_resample(df.drop(columns= ['Default']), df['Default'])
+X_smo['Default'] = y_res
+print(X_smo.shape)
+X_smo.to_csv('Clean_Train_SMOTE.csv')
+
+
