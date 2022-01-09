@@ -1,0 +1,41 @@
+Variable,Description
+ID,Client Loan application ID
+Client_Income,Client Income in $
+Car_Owned,Any Car owned by client before applying for the loan for another car (0 means No and 1 means otherwise)
+Bike_Owned,Any bike owned by client (0 means No and 1 means otherwise)
+Active_Loan,Any other active loan at the time of aplication of loan (0 means No and 1 means otherwise)
+House_Own,Any house owned by client (0 means No and 1 means otherwise)
+Child_Count,Number of children the client has
+Credit_Amount,Credit amount of the loan in $
+Loan_Annuity,Loan annuity in $
+Accompany_Client,Who accompanied the client when client applied for the loan
+Client_Income_Type,Clients income type
+Client_Education,Highest level of education ahieved by client
+Client_Marital_Status,"Marital status of client (D- Divorced, S- Single, M- Married, W- Widowed)"
+Client_Gender,Gender of the Client
+Loan_Contract_Type,"Loan Type (CL- Cash Loan, RL- Revolving Loan)"
+Client_Housing_Type,Client Housing situation
+Population_Region_Relative,Relative population of the region where the client is living. Higher value means the client is living in more populated area
+Age_Days,Age of the client at the time of application submission
+Employed_Days,"Days before the application, the client started earning"
+Registration_Days,"Days before the loan application, the client changed his/her registration"
+ID_Days,"Days before the loan application, the client changed his/her identity document with which the loan was applied"
+Own_House_Age,Age of Client's house in years
+Mobile_Tag,Mobile Number provided by Client (1 means Yes and 0 means No)
+Homephone_Tag,Homephone Number provided by Client (1 means Yes and 0 means No)
+Workphone_Working,Was workphone number reachable (1 means Yes and 0 means No)
+Client_Occupation,Client Occupation type
+Client_Family_Members,Number of family members does client have
+Cleint_City_Rating,Client city rating. 3 denotes best and 2 denotes good and 1 denotes average
+Application_Process_Day,"Day of the week on which client applied for the loan (0-Sun, 1-Mon,2-Tues, 3-Wed, 4-Thrus,5-Fri, 6-Sat)"
+Application_Process_Hour,hour of the day on which client applied for the loan
+Client_Permanent_Match_Tag,Indication if client contact address does not match permanent address.
+Client_Contact_Work_Tag,Indication if client work address does not match contact address.
+Type_Organization,Type of organization where client works
+Score_Source_1,Score sourced from other source. This is a normalzied socre
+Score_Source_2,Score sourced from other source. This is a normalzied socre
+Score_Source_3,Score sourced from other source. This is a normalzied socre
+Social_Circle_Default,How many friends/family member of client defaulted on any loan payment in last 60 days
+Phone_Change,"How many days before the loan application, client changed his/her phone"
+Credit_Bureau,Total number of enquiries in last year
+Default,1 means the client defaulted on loan payments and 0 means otherwise
